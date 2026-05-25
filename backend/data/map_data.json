@@ -1,0 +1,36 @@
+{
+  "width": 9.6,
+  "height": 9.6,
+  "obstacles": [
+    {
+      "id": "shelf_01",
+      "name": "水果区货架",
+      "type": "rect",
+      "x1": 1.0,
+      "y1": 2.0,
+      "x2": 4.0,
+      "y2": 2.6
+    },
+    {
+      "id": "shelf_02",
+      "name": "蔬菜区货架",
+      "type": "rect",
+      "x1": 1.0,
+      "y1": 3.5,
+      "x2": 4.0,
+      "y2": 4.1
+    }
+  ],
+  "nodes": [
+    {"id": "entry", "x": 0.5, "y": 0.5, "name": "入口"},
+    {"id": "fruit_aisle", "x": 2.5, "y": 1.0},
+    {"id": "veg_aisle", "x": 2.5, "y": 3.0},
+    {"id": "checkout", "x": 8.5, "y": 4.5, "name": "收银台"}
+  ],
+  "edges": [
+    ["entry", "fruit_aisle"],
+    ["fruit_aisle", "veg_aisle"],
+    ["veg_aisle", "checkout"]
+  ],
+  "checkout_node": "checkout"
+}
